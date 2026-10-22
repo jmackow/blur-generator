@@ -1,0 +1,35 @@
+{
+  "name": "blur-generator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Add motion, zoom, spin and tilt-shift blur to photos, right in the browser.",
+  "license": "MIT",
+  "author": "Jarosław Maćków",
+  "homepage": "https://jmackow.github.io/blur-generator/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmackow/blur-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jmackow/blur-generator/issues"
+  },
+  "engines": {
+    "node": "^18.0.0 || ^20.0.0 || >=22.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.5"
+  }
+}
