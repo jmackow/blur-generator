@@ -6,7 +6,7 @@ Add motion, zoom, spin and tilt-shift blur to your photos, right in the browser.
 
 Images are processed locally with the Canvas API. Nothing is uploaded to a server.
 
-![Blur Generator applying a zoom blur to a photo of a runner](docs/screenshot.jpg)
+![Blur Generator applying a zoom blur to an image of a runner](docs/screenshot.jpg)
 
 ## Effects
 
@@ -21,7 +21,7 @@ Motion, zoom and spin can pull in areas beyond the photo's edges. Those areas ar
 
 The result updates as you change settings. Use the **Result / Original** toggle to compare, then download the result as a JPEG. Images larger than 3000 px on the long side are scaled down before processing.
 
-Want something to try it on? Sample photos are in [`example-assets/`](example-assets).
+Want something to try it on? Sample images are in [`example-assets/`](example-assets). They were created by Jarosław Maćków with Midjourney.
 
 ## Run it locally
 
@@ -50,6 +50,8 @@ The build is a plain static site, so you can host `dist/` anywhere.
 
 Recent versions of Chrome, Edge, Firefox and Safari (16.4 or newer). The app relies on `OffscreenCanvas`.
 
+The layout is designed for desktop screens.
+
 ## Project structure
 
 ```
@@ -58,7 +60,8 @@ src/
   App.tsx          Layout and state
   components/      Upload, effect picker, sliders, image viewer
   types.ts         Effect and parameter types
-example-assets/    Sample photos to try the effects on
+public/            Favicon (copied into the build as-is)
+example-assets/    Sample images to try the effects on
 docs/              README screenshot
 ```
 
